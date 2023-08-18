@@ -1,1 +1,3 @@
-
+steps:
+  - label: ":testflight: Running Tests"
+  - command: "bundle exec fastlane test"
