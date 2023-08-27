@@ -12,25 +12,18 @@ struct ContentView: View {
     @State var filters = Array(1...10)
     
     var body: some View {
-        NavigationStack {
-            ScrollView(.horizontal) {
-                LazyHStack(alignment: .center) {
-                    ForEach(1...10, id: \.self) { count in
-                        /*@START_MENU_TOKEN@*/Text("Placeholder \(count)")/*@END_MENU_TOKEN@*/
-                    }
-                }
+        HStack {
+            ForEach(1...4, id: \.self) { _ in
+                CardView(isFacedUp: true)
             }
-            .frame(height: 50)
-            .scrollIndicators(.hidden)
-            List(nums, id: \.self) { num in
-                Text("\(num)")
-            }
-            .navigationTitle("Jobs")
-            .listStyle(.plain)
         }
+        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Preview: PreviewProvider  {
+    static var previews: some View {
+        ContentView()
+    }
 }
+

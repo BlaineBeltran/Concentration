@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212C71BF2A9A765F00504155 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C71BE2A9A765F00504155 /* AuthenticationView.swift */; };
+		212C71C12A9A7A0E00504155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C71C02A9A7A0E00504155 /* Constants.swift */; };
+		212C71C42A9A7B3800504155 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 212C71C32A9A7B3800504155 /* Localizable.xcstrings */; };
+		212C71C72A9A7CC700504155 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C71C62A9A7CC700504155 /* AuthenticationService.swift */; };
+		212C71C92A9A8E0600504155 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C71C82A9A8E0600504155 /* CardView.swift */; };
 		21D33A012A8FB43E00E7EE2C /* ConcentrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D33A002A8FB43E00E7EE2C /* ConcentrationApp.swift */; };
 		21D33A032A8FB43E00E7EE2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D33A022A8FB43E00E7EE2C /* ContentView.swift */; };
 		21D33A052A8FB43F00E7EE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D33A042A8FB43F00E7EE2C /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		212C71BE2A9A765F00504155 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		212C71C02A9A7A0E00504155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		212C71C32A9A7B3800504155 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		212C71C62A9A7CC700504155 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		212C71C82A9A8E0600504155 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		21D339FD2A8FB43E00E7EE2C /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D33A002A8FB43E00E7EE2C /* ConcentrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationApp.swift; sourceTree = "<group>"; };
 		21D33A022A8FB43E00E7EE2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +81,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212C71C22A9A7A1100504155 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				212C71C02A9A7A0E00504155 /* Constants.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		212C71C52A9A7CB600504155 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				212C71C62A9A7CC700504155 /* AuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		212C71CA2A9A8E1300504155 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				212C71C82A9A8E0600504155 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		21D339F42A8FB43E00E7EE2C = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +128,15 @@
 		21D339FF2A8FB43E00E7EE2C /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				212C71CA2A9A8E1300504155 /* Views */,
+				212C71C52A9A7CB600504155 /* Services */,
+				212C71C22A9A7A1100504155 /* Other */,
 				21D33A002A8FB43E00E7EE2C /* ConcentrationApp.swift */,
+				212C71BE2A9A765F00504155 /* AuthenticationView.swift */,
 				21D33A022A8FB43E00E7EE2C /* ContentView.swift */,
 				21D33A042A8FB43F00E7EE2C /* Assets.xcassets */,
 				21D33A062A8FB43F00E7EE2C /* Preview Content */,
+				212C71C32A9A7B3800504155 /* Localizable.xcstrings */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -233,6 +272,7 @@
 			files = (
 				21D33A082A8FB43F00E7EE2C /* Preview Assets.xcassets in Resources */,
 				21D33A052A8FB43F00E7EE2C /* Assets.xcassets in Resources */,
+				212C71C42A9A7B3800504155 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +299,10 @@
 			files = (
 				21D33A032A8FB43E00E7EE2C /* ContentView.swift in Sources */,
 				21D33A012A8FB43E00E7EE2C /* ConcentrationApp.swift in Sources */,
+				212C71BF2A9A765F00504155 /* AuthenticationView.swift in Sources */,
+				212C71C12A9A7A0E00504155 /* Constants.swift in Sources */,
+				212C71C92A9A8E0600504155 /* CardView.swift in Sources */,
+				212C71C72A9A7CC700504155 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,6 +469,7 @@
 				DEVELOPMENT_TEAM = GP3JFMJA3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your phone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +499,7 @@
 				DEVELOPMENT_TEAM = GP3JFMJA3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your phone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
