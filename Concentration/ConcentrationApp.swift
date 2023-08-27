@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct ConcentrationApp: App {
+    @State var isAuthenticated = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isAuthenticated {
+                ContentView()
+            } else {
+                AuthenticationView(isAuthenticated: $isAuthenticated)
+            }
         }
     }
 }

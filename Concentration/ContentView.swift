@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var nums = Array(1...30)
+    @State var filters = Array(1...10)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        HStack {
+            ForEach(1...4, id: \.self) { _ in
+                CardView(isFacedUp: true)
+            }
         }
         .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Preview: PreviewProvider  {
+    static var previews: some View {
+        ContentView()
+    }
 }
+

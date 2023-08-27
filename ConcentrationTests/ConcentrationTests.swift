@@ -19,7 +19,7 @@ final class ConcentrationTests: XCTestCase {
     }
 
     func testExample() throws {
-        let test = "Test"
-        XCTAssertEqual(test, "Test")
+        let test = "Buildkitee"
+        XCTAssertEqual(test, "Buildkitee")
     }
 }

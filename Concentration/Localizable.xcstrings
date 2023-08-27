@@ -1,0 +1,18 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "👻" : {
+
+    },
+    "Login" : {
+      "comment" : "The title of a button used to login a user"
+    },
+    "Password" : {
+      "comment" : "The password placeholder string when performing authentication"
+    },
+    "Username" : {
+      "comment" : "The username placeholder string when performing authentication"
+    }
+  },
+  "version" : "1.0"
+}
